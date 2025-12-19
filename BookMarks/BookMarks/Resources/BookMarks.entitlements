@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<!-- 
+		App Sandbox is DISABLED to allow full disk access.
+		This allows the app to create marker files in any folder without permission issues.
+		
+		To enable sandboxing (more secure but requires user-selected file access):
+		Uncomment the line below and set it to <true/>
+	-->
+	<!-- <key>com.apple.security.app-sandbox</key> -->
+	<!-- <false/> -->
+	
+	<!-- Bookmarks still work without sandbox -->
+	<key>com.apple.security.files.bookmarks.app-scope</key>
+	<true/>
+	<key>com.apple.security.files.bookmarks.document-scope</key>
+	<true/>
+</dict>
+</plist>
+
